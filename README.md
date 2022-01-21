@@ -97,26 +97,40 @@ messageCreator(userInput);
 Expected Output:
 [0,"Beep!","Boop!","Won't you be my neighbor?",4,5]
 
-Test: "it should return an array with number 13 replaced with 'Won't you be my neighbor?'"
+Test: "it should return an array that displays any number that includes a 1 as 'beep!'"
 Code:
-let userInput ="15";
+let userInput ="11";
 messageCreator(userInput);
 Expected Output:
-[0,"Beep!","Boop!", "Won't you be my neighbor?", 4,5,6,7,8,9,10,11,12,"Won't you be my neighbor?", 14, 15]
+[0,"Beep!","Boop!", "Won't you be my neighbor?", 4,5,6,7,8,9,'Beep!','Beep!']
 
-Test: "it should return an array with number 21 replaced with 'boop', and 13 should remain a number"
+Test: "it should return an array where numbers that include a 2 display as boop!"
 Code:
-let userInput = "22";
+let userInput = "12";
 messageCreator(userInput);
 Expected Output:
-[0,"Beep!","Boop!", "Won't you be my neighbor?", 4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,"Boop",22]
+[0,"Beep!","Boop!", "Won't you be my neighbor?", 4,5,6,7,8,9,'Beep!','Beep!','Boop!']
 
-Test: "it should return an array with number 32 replaced with 'Won't you be my neighbor?', 13 and 21 remain 13 and 21"
+Test: "it should return an array where numbers that include a 3 are replaced with 'Won't you be my neighbor?'"
 Code:
-let userInput = "33";
+let userInput = "13";
 messageCreator(userInput);
 Expected Output:
-[0,"Beep!","Boop!","Won't you be my neighbor?",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,"Won't you be my neighbor?",33]
+[0,"Beep!","Boop!", "Won't you be my neighbor?", 4,5,6,7,8,9,'Beep!','Beep!','Boop!',"Won't you be my neighbor?"]
+
+Test: "it should return an array so that if a number includes a 1 and a 2, the higher number still displays proper message"
+Code:
+let userInput = "21";
+messageCreator(userInput);
+Expected Output:
+[0,"Beep!","Boop!", "Won't you be my neighbor?", 4,5,6,7,8,9,'Beep!','Beep!','Boop!,'"Won't you be my neighbor?", 'Beep!','Beep!','Beep!','Beep!','Beep!','Beep!','Boop!,'Boop!']
+
+Test: "it should return an array where if a number has a 2 or a 3, the message for 3 is displayed"
+Code:
+let userInput = "23";
+messageCreator(userInput);
+Expected Output:
+[0,"Beep!","Boop!", "Won't you be my neighbor?", 4,5,6,7,8,9,'Beep!','Beep!','Boop!,'"Won't you be my neighbor?", 'Beep!','Beep!','Beep!','Beep!','Beep!','Beep!','Boop!,'Boop!',"Won't you be my neighbor?"]
 
 ## License
 
