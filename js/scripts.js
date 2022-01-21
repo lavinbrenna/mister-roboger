@@ -6,7 +6,10 @@ function messageCreator(input){
   for(i = 0; i <= userNumber; i++){
     if(i === 1){
       userArray.push("Beep!");
-    }else{
+    }else if(i === 2){
+      userArray.push("Boop!");
+    }
+    else{
       userArray.push(i);
     }
   }
