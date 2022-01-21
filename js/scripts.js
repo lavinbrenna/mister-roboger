@@ -43,18 +43,13 @@ $(document).ready(function(){
   $("form#messageForm").submit(function(){
     event.preventDefault();
     const userInput = $("input#userInput").val();
-    console.log(userInput);
     const isNumber = numberAnalyzer(userInput);
-    console.log(isNumber);
     const userMessage = messageCreator(userInput);
-    console.log(userMessage);
-    let hTML = "<p>";
     if(isNumber === true){
       $("#response").show();
       $("#error").hide();
       $("#message").show();
       $(".roboMessage").text(userMessage);
-      return "</p>";
     }else if(isNumber === false){
       $("#response").show();
       $("#error").show();
