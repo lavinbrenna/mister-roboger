@@ -84,12 +84,18 @@ Expected Output:
 [0,"Beep!",2,3,4,5]
 
 Test: "it should return an array with the number 2 replaced with 'Boop!'"
-Code: 
+Code:
 let userInput = "5";
 messageCreator(userInput);
 Expected Output:
 [0,"Beep!","Boop!",3,4,5]
 
+Test: "it should return an array with the number 3 replaced with 'Won't you be my neighbor?'"
+Code:
+let userInput = "5";
+messageCreator(userInput);
+Expected Output:
+[0,"Beep!","Boop!","Won't you be my neighbor?",4,5]
 ## License
 
 MIT License
