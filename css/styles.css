@@ -10,7 +10,7 @@ display: none;
 #message{
 display: none;
 }
-body {
+.container {
   height: 100vh;
   margin: auto;
   font-family: 'Orbitron', sans-serif;
@@ -22,7 +22,7 @@ font-family: 'Press Start 2P', cursive;
 padding: 10px;
 margin: 20px
 }
-body p {
+.container p {
   background-color: white;
   transform: translate y(0px);
   animation: float 5s ease-in-out infinite;
@@ -39,7 +39,7 @@ body p {
   font-family: 'Orbitron', sans-serif;
   border: 1px solid ;
 }
-body p:after {
+.container p:after {
   transform: translate y(0px);
   animation: float2 5s ease-in-out infinite;
   content: ".";
@@ -91,8 +91,12 @@ body p:after {
   }
 }
 img.robot{
+margin-top: 80px;
 position: relative;
-left: 0;
-bottom: 0;
-width: 30%;
+left: 10;
+bottom: -10;
+width: 25%;
+}
+form{
+  margin: 20px;
 }
