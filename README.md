@@ -44,6 +44,14 @@ let userInput = 10;
 numberAnalyzer(userInput);
 Expected Output:
 True
+
+Test: "It should return false if letters or punctuation are passed in"
+Code:
+let userInput = "hi!";
+numberAnalyzer(userInput);
+ExpectedOutput:
+false
+
 ## License
 
 MIT License
