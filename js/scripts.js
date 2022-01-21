@@ -62,6 +62,7 @@ $(document).ready(function(){
     const userName = $("input#userName").val();
     const isNumber = numberAnalyzer(userInput);
     const userMessage = messageCreator(userInput, userName);
+    const errorMessage = "1'm s0rry " + userName + " y0u must 3nt3r @ numb3r. try @g@in";
     if(isNumber === true){
       $("#response").show();
       $("#error").hide();
@@ -70,6 +71,7 @@ $(document).ready(function(){
     }else if(isNumber === false){
       $("#response").show();
       $("#error").show();
+      $(".roboError").text(errorMessage);
       $("#message").hide();
     }else{
       $("#response").hide();
