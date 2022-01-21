@@ -13,14 +13,14 @@ display: none;
 body {
   height: 100vh;
   margin: auto;
-  place-items: center;
-  display: grid;
   font-family: 'Orbitron', sans-serif;
   background-color: white;
 }
 .header{
 text-align: center;
 font-family: 'Press Start 2P', cursive;
+padding: 10px;
+margin: 20px
 }
 body p {
   background-color: white;
@@ -89,4 +89,10 @@ body p:after {
     line-height: 30px;
     transform: translate y(0px);
   }
+}
+img.robot{
+position: relative;
+left: 0;
+bottom: 0;
+width: 30%;
 }
