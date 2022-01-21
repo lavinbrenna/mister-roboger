@@ -65,9 +65,24 @@ Description: messageCreator()
 Test: "it should return an array with the numbers up to the number entered by the user"
 Code:
 let userInput = "0";
-messageCreator(userInput)
+messageCreator(userInput);
 Expected Output:
-[0];
+[0]
+
+Test: "it should return an array with the numbers up to the number entered by the user"
+Code:
+let userInput = "10";
+messageCreator(userInput);
+Expected Output:
+[0,1,2,3,4,5,6,7,8,9,10]
+
+Test: "it should return an array with the number 1 replaced with "Beep!"
+Code:
+let userInput = "5";
+messageCreator(userInput);
+Expected Output:
+[0,"Beep!",2,3,4,5]
+
 ## License
 
 MIT License
