@@ -41,6 +41,7 @@ function messageCreator(input){
 //UI Logic
 $(document).ready(function(){
   $("form#messageForm").submit(function(){
+    event.preventDefault();
     const userInput = $("input#userInput").val();
     console.log(userInput);
     const isNumber = numberAnalyzer(userInput);
@@ -49,16 +50,17 @@ $(document).ready(function(){
     console.log(userMessage);
     let hTML = "<p>";
     if(isNumber === true){
+      $("#response").show();
       $("#error").hide();
       $("#message").show();
-      $("#message").append(hTML+= userMessage + "</p>");
-      return hTML;
+      $(".roboMessage").text(userMessage);
+      return "</p>";
     }else if(isNumber === false){
+      $("#response").show();
       $("#error").show();
       $("#message").hide();
     }else{
-      $("#error").hide();
-      $("#message").hide();
+      $("#response").hide();
     }
   });
 })

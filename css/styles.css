@@ -1,6 +1,9 @@
-.error{
+#response{
+  display:none;
+}
+#error{
 display: none;
 }
-.message{
+#message{
 display: none;
 }
