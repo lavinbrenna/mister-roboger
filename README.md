@@ -96,6 +96,13 @@ let userInput = "5";
 messageCreator(userInput);
 Expected Output:
 [0,"Beep!","Boop!","Won't you be my neighbor?",4,5]
+
+Test" it should return an array with number 13 replaced with 'Won't you be my neighbor?'"
+Code:
+let userInput ="15";
+messageCreator(userInput);
+Expected Output:
+[0,"Beep!","Boop!", "Won't you be my neighbor?", 4,5,6,7,8,9,10,11,12,"Won't you be my neighbor?", 14, 15]
 ## License
 
 MIT License
