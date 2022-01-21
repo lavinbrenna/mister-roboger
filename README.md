@@ -76,12 +76,19 @@ messageCreator(userInput);
 Expected Output:
 [0,1,2,3,4,5,6,7,8,9,10]
 
-Test: "it should return an array with the number 1 replaced with "Beep!"
+Test: "it should return an array with the number 1 replaced with 'Beep!'"
 Code:
 let userInput = "5";
 messageCreator(userInput);
 Expected Output:
 [0,"Beep!",2,3,4,5]
+
+Test: "it should return an array with the number 2 replaced with 'Boop!'"
+Code: 
+let userInput = "5";
+messageCreator(userInput);
+Expected Output:
+[0,"Beep!","Boop!",3,4,5]
 
 ## License
 
