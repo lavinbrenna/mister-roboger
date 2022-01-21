@@ -8,6 +8,8 @@ function messageCreator(input){
       userArray.push("Beep!");
     }else if(i === 2){
       userArray.push("Boop!");
+    }else if(i === 3){
+      userArray.push("Won't you be my neighbor?")
     }
     else{
       userArray.push(i);
