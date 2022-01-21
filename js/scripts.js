@@ -26,49 +26,30 @@ function messageCreator(number, name){
       }
     else if(i > 9){
       let newDigit = i.toString().split('');
-      if (newDigit[0].includes(1) && (newDigit[1] != '2' && newDigit[1] != '3')){
+      if (((newDigit[0].includes(1)) && (newDigit[1] != '2' && newDigit[1] != '3'))){
         userArray.push("Beep!");
       }
-    }
-    }
-    /*else if(i > 9){
-      let newDigit = i.toString().split('');
-      if((newDigit[0].includes(1))&& (newDigit[1] != '2' && newDigit[1] != '3')){
-        userArray.push("Beep!");
-      }
-      else if((newDigit[0].includes(1) && newDigit[1].includes(2))){
-        console.log(newDigit[0],newDigit[1]);
+      else if((newDigit[0].includes(2) && newDigit[1] != '3')){
         userArray.push("Boop!");
       }
-      else if((newDigit[0].includes(1) && newDigit[1].includes(3))){
-        console.log(newDigit[0], newDigit[1]);
-        userArray.push(name + ", won't you be my neighbor?");
-      }
-      else if((newDigit[0].includes(2) && newDigit[1]!= '3')){
-        userArray.push("Boop!");
-      }
-      else if(newDigit[0].includes(2)&& newDigit[1].includes(3)){
-        userArray.push(name + ", won't you be my neighbor?");
-      }
-      else if(newDigit[0].includes(3)){
+      else if((newDigit[0].includes(3) || newDigit[1].includes(3))){
         userArray.push(name + ", won't you be my neighbor?");
       }
       else if(newDigit[1].includes(1)){
-          userArray.push("Beep!");
-        }
-      else if(newDigit[1].includes(2)){
-          userArray.push("Boop!");
-        }
-      else if(newDigit[1].includes(3)){
-          userArray.push(name + ", won't you be my neighbor?");
-        }else{
-          userArray.push(i);
-        }
-      }*/
-      return userArray.join(", ");
+        userArray.push("Beep!")
+      }
+      else if(newDigit[0]!='3' && newDigit[1].includes(2)){
+        userArray.push("Boop!");
+      }
+      else{
+        userArray.push(parseInt(newDigit.join("")));
+        console.log(userArray);
+      }
+    }else{
+      userArray.push(i);
+    }
+    }return userArray.join(", ");
   }
-  
-
 //UI Logic
 
 $(document).ready(function(){
