@@ -1,4 +1,4 @@
-let userInput = "5";
+let userInput = "15";
 
 function messageCreator(input){
   let userNumber = parseInt(input);
@@ -9,6 +9,8 @@ function messageCreator(input){
     }else if(i === 2){
       userArray.push("Boop!");
     }else if(i === 3){
+      userArray.push("Won't you be my neighbor?")
+    }else if(i === 13){
       userArray.push("Won't you be my neighbor?")
     }
     else{
