@@ -1,4 +1,15 @@
-let userInput = "33";
+//Business Logic
+let userInput = "13";
+
+function numberAnalyzer(input){
+  let numbers = /^[0-9]+$/;
+  if(input.match(numbers) != null){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
 
 function messageCreator(input){
   let userNumber = parseInt(input);
@@ -24,25 +35,15 @@ function messageCreator(input){
       userArray.push(i);
     }
   }
-  return userArray;
+  return userArray.join(", ");
 }
 
 messageCreator(userInput);
 
 
+//UI Logic
 
 
-
-//finished functions
-
-function numberAnalyzer(input){
-  let numbers = /^[0-9]+$/;
-  if(input.match(numbers) != null){
-    return true;
-  }
-  else{
-    return false;
-  }
-}
 
 numberAnalyzer(userInput);
+messageCreator(userInput);
