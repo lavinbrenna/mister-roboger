@@ -43,7 +43,6 @@ function messageCreator(number, name){
       }
       else{
         userArray.push(parseInt(newDigit.join("")));
-        console.log(userArray);
       }
     }else{
       userArray.push(i);
