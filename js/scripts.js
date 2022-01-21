@@ -1,4 +1,4 @@
-let userInput = "hi!";
+let userInput = "h1!";
 
 function numberAnalyzer(input){
   let numbers = /^[0-9]+$/;
