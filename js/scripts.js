@@ -42,8 +42,11 @@ messageCreator(userInput);
 
 
 //UI Logic
+$(document).ready(function(){
+  event.preventDefault();
+  const userInput = $("input#userInput").val();
+  const isNumber = numberAnalyzer(userInput);
+  const userMessage = messageCreator(userInput);
+})
 
 
-
-numberAnalyzer(userInput);
-messageCreator(userInput);
