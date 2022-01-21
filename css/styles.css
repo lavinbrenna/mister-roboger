@@ -7,3 +7,11 @@ display: none;
 #message{
 display: none;
 }
+body{
+  background-image: url('../img/background.jpg');
+  background-size:200%;
+  background-repeat:no-repeat;
+}
+.container{
+  background-color:azure;
+}
