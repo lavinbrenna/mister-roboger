@@ -13,7 +13,7 @@ function messageCreator(number, name){
   let userNumber = parseInt(number);
   const userArray = [];
   if(userNumber > 100){
-    return name + ", this number is too big :(";
+    return name + ", th1s numb3r 1s t00 b1g (இ﹏இ`｡)";
   }else{
     for(i = 0; i <= userNumber; i++){
       if(i <= 9){
