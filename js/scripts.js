@@ -38,15 +38,29 @@ function messageCreator(input){
   return userArray.join(", ");
 }
 
-messageCreator(userInput);
-
-
 //UI Logic
 $(document).ready(function(){
-  event.preventDefault();
-  const userInput = $("input#userInput").val();
-  const isNumber = numberAnalyzer(userInput);
-  const userMessage = messageCreator(userInput);
+  $("form#messageForm").submit(function(){
+    const userInput = $("input#userInput").val();
+    console.log(userInput);
+    const isNumber = numberAnalyzer(userInput);
+    console.log(isNumber);
+    const userMessage = messageCreator(userInput);
+    console.log(userMessage);
+    let hTML = "<p>";
+    if(isNumber === true){
+      $("#error").hide();
+      $("#message").show();
+      $("#message").append(hTML+= userMessage + "</p>");
+      return hTML;
+    }else if(isNumber === false){
+      $("#error").show();
+      $("#message").hide();
+    }else{
+      $("#error").hide();
+      $("#message").hide();
+    }
+  });
 })
 
 
