@@ -59,6 +59,15 @@ let userInput = "h1!";
 numberAnalyzer(userInput);
 ExpectedOutput:
 false
+
+Description: messageCreator()
+
+Test: "it should return an array with the numbers up to the number entered by the user"
+Code:
+let userInput = "0";
+messageCreator(userInput)
+Expected Output:
+[0];
 ## License
 
 MIT License
