@@ -15,6 +15,7 @@
 ## Description
 
 Using Javascript, this page will loop through an array of numbers, up to the one input by the user, and build a message based on the values associated with each number.
+
 ## Setup/Installation Requirements
 
 * Clone Git repository to local machine
@@ -52,6 +53,12 @@ numberAnalyzer(userInput);
 ExpectedOutput:
 false
 
+Test: "It should return false if there is a mix of numbers, letters, and punctuation"
+Code:
+let userInput = "h1!";
+numberAnalyzer(userInput);
+ExpectedOutput:
+false
 ## License
 
 MIT License
