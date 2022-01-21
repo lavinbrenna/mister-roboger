@@ -33,11 +33,17 @@ Description: numberAnalyzer()
 
 Test: "It should return true if a single digit number is passed in"
 Code:
-let number = 0;
-numberAnalyzer(number);
+let userInput = 0;
+numberAnalyzer(userInput);
 Expected Output:
 true
 
+Test: "It should return true if multiple digits are passed in"
+Code:
+let userInput = 10;
+numberAnalyzer(userInput);
+Expected Output:
+True
 ## License
 
 MIT License
