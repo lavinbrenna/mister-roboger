@@ -11,10 +11,16 @@ display: none;
 display: none;
 }
 .container {
-  height: 100vh;
   margin: auto;
   font-family: 'Orbitron', sans-serif;
-  background-color: white;
+  background-color: rgba(255,255,255,.60);
+  border-radius: 10px;
+  max-height: 1000px;
+  width: 100%;
+  padding: 20px;
+}
+body{
+  background-image: url('../img/background.png');
 }
 .header{
 text-align: center;
@@ -35,7 +41,7 @@ margin: 20px
   padding: 50px;
   border-radius: 11px;
   position: relative;
-  box-shadow: 20px 20px;
+  box-shadow: 10px 10px;
   font-family: 'Orbitron', sans-serif;
   border: 1px solid ;
 }
@@ -57,7 +63,7 @@ margin: 20px
   display: block;
   bottom: -30px;
   left: 0;
-  box-shadow: 22px 22px black;
+  box-shadow: 12px 12px black;
   z-index: -2;
   background-color: white;
 }
