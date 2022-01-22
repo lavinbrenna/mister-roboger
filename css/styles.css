@@ -13,7 +13,7 @@ display: none;
 .container {
   margin: auto;
   font-family: 'Orbitron', sans-serif;
-  background-color: rgba(255,255,255,.60);
+  background-color: rgba(255,255,255,.80);
   border-radius: 10px;
   max-height: 1000px;
   width: 100%;
@@ -22,13 +22,15 @@ display: none;
 }
 body{
   background-image: url('../img/background.png');
+  background-size: 100%;
 }
 .header{
 text-align: center;
 font-family: 'Press Start 2P', cursive;
-padding: 10px;
-margin: 20px
+padding: 5px;
+margin: 20px;
 }
+
 .container p {
   background-color: white;
   transform: translate y(0px);
@@ -102,8 +104,14 @@ margin-top: 80px;
 position: relative;
 left: 10;
 bottom: -10;
-width: 25%;
+width: 20%;
 }
 form{
   margin: 20px;
+}
+footer{
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  padding: 10px;
 }
