@@ -53,6 +53,7 @@ function messageCreator(number, name){
       }return userArray.join(", ");
     }
   }
+
 //UI Logic
 
 $(document).ready(function(){

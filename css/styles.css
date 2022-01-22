@@ -27,8 +27,9 @@ body{
 .header{
 text-align: center;
 font-family: 'Press Start 2P', cursive;
-padding: 10px;
+padding: 5px;
 margin: 20px
+
 }
 .container p {
   background-color: white;
