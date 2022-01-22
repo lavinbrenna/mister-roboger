@@ -13,7 +13,7 @@ function messageCreator(number, name){
   let userNumber = parseInt(number);
   const userArray = [];
   if(userNumber > 100){
-    return name + ", th1s numb3r 1s t00 b1g (இ﹏இ`｡)";
+    return "I'm sorry " + name + ", th1s numb3r 1s t00 b1g (இ﹏இ`｡)";
   }else{
     for(i = 0; i <= userNumber; i++){
       if(i <= 9){
@@ -62,18 +62,21 @@ $(document).ready(function(){
     const userName = $("input#userName").val();
     const isNumber = numberAnalyzer(userInput);
     const userMessage = messageCreator(userInput, userName);
-    const errorMessage = "1'm s0rry " + userName + " y0u must 3nt3r @ numb3r. try @g@in";
+    const errorMessage = "ლ(ﾟдﾟლ) 1'm s0rry " + userName + " y0u must 3nt3r @ numb3r. try @g@in";
     if(isNumber === true){
+      $("#default").hide();
       $("#response").show();
       $("#error").hide();
       $("#message").show();
       $(".roboMessage").text(userMessage);
     }else if(isNumber === false){
+      $("#default").hide();
       $("#response").show();
       $("#error").show();
       $(".roboError").text(errorMessage);
       $("#message").hide();
     }else{
+      $("#default").hide();
       $("#response").hide();
     }
   });
