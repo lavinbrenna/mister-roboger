@@ -22,7 +22,7 @@ Using Javascript, this page will loop through an array of numbers, up to the one
 * Navigate to index.html
 * Open in default browser
 * Or open in Git Hub Pages link
-* [GitHubPages Link]("http://www.google.com")
+* [Mister Robo-ger](https://lavinbrenna.github.io/mister-roboger/)
 
 ## Known Bugs
 
