@@ -15,7 +15,7 @@ display: none;
   font-family: 'Orbitron', sans-serif;
   background-color: rgba(255,255,255,.80);
   border-radius: 10px;
-  max-height: 1000px;
+  height: relative;
   width: 100%;
   padding: 20px;
   border: 10px solid black;
@@ -99,6 +99,7 @@ margin: 20px;
     transform: translate y(0px);
   }
 }
+
 img.robot{
 margin-top: 80px;
 position: relative;
