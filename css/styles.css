@@ -1,15 +1,10 @@
-#response{
+#response, #error, #message{
   display:none;
   margin: auto;
   padding: 10px;
   text-align: center;
 }
-#error{
-display: none;
-}
-#message{
-display: none;
-}
+
 .container {
   margin: auto;
   font-family: 'Orbitron', sans-serif;

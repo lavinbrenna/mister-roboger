@@ -10,48 +10,22 @@ function numberAnalyzer(number){
 }
 
 function messageCreator(number, name){
-  let userNumber = parseInt(number);
+  let userNumber = number;
   const userArray = [];
-  if(userNumber > 100){
-    return "I'm sorry " + name + ", th1s numb3r 1s t00 b1g (இ﹏இ`｡)";
-  }else{
-    for(i = 0; i <= userNumber; i++){
-      if(i <= 9){
-        if(i === 1){
-          userArray.push("Beep!");
-        }else if(i === 2){
-          userArray.push("Boop!");
-        }else if(i === 3){
-          userArray.push(name + ", won't you be my neighbor?");
-        }else{
-          userArray.push(i);
-        }
-        }
-      else if(i > 9){
-        let newDigit = i.toString().split('');
-        if (((newDigit[0].includes(1)) && (newDigit[1] != '2' && newDigit[1] != '3'))){
+    for(let i = 0; i <= parseInt(userNumber); i++){
+      let newDigit = i.toString();
+      if ((newDigit.includes(1) && !newDigit.includes(2) && !newDigit.includes(3))){
           userArray.push("Beep!");
         }
-        else if((newDigit[0].includes(2) && newDigit[1] != '3')){
+        else if(newDigit.includes(2) && !newDigit.includes(3)){
           userArray.push("Boop!");
         }
-        else if((newDigit[0].includes(3) || newDigit[1].includes(3))){
+        else if((newDigit.includes(3))){
           userArray.push(name + ", won't you be my neighbor?");
-        }
-        else if(newDigit[1].includes(1)){
-          userArray.push("Beep!")
-        }
-        else if(newDigit[0]!='3' && newDigit[1].includes(2)){
-          userArray.push("Boop!");
-        }
-        else{
-          userArray.push(parseInt(newDigit.join("")));
-        }
       }else{
         userArray.push(i);
       }
-      }return userArray.join(", ");
-    }
+      }return userArray;
   }
 
 //UI Logic
@@ -65,20 +39,15 @@ $(document).ready(function(){
     const userMessage = messageCreator(userInput, userName);
     const errorMessage = "ლ(ﾟдﾟლ) 1'm s0rry " + userName + " y0u must 3nt3r @ numb3r. try @g@in";
     if(isNumber === true){
-      $("#default").hide();
-      $("#response").show();
-      $("#error").hide();
-      $("#message").show();
+      $("#default, #error").hide();
+      $("#response, #message").show();
       $(".roboMessage").text(userMessage);
     }else if(isNumber === false){
-      $("#default").hide();
-      $("#response").show();
-      $("#error").show();
+      $("#default, #message").hide();
+      $("#response, #error").show();
       $(".roboError").text(errorMessage);
-      $("#message").hide();
     }else{
-      $("#default").hide();
-      $("#response").hide();
+      $("#default, #response").hide();
     }
   });
 })
